@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aneesatariq.github.io/sitemap.xml

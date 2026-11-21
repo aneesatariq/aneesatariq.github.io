@@ -243,6 +243,39 @@ export function initUI(context) {
   const nav = $('#primary-nav');
   const menuButton = $('.menu-toggle');
   const compactNav = matchMedia('(max-width: 899px)');
+  
+  // Scroll progress tracking
+  function updateScrollProgress() {
+    if (!header) return;
+    const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (winScroll / height) * 100;
+    header.style.setProperty('--scroll-progress', scrolled + '%');
+    
+    // Add scrolled class for visual changes
+    if (winScroll > 50) {
+      header.classList.add('is-scrolled');
+    } else {
+      header.classList.remove('is-scrolled');
+    }
+  }
+  
+  // Throttled scroll handler for performance
+  let scrollFrame;
+  function scheduleScrollUpdate() {
+    if (!scrollFrame) {
+      scrollFrame = requestAnimationFrame(() => {
+        updateScrollProgress();
+        scrollFrame = null;
+      });
+    }
+  }
+  
+  if (header) {
+    window.addEventListener('scroll', scheduleScrollUpdate, { passive: true });
+    updateScrollProgress();
+  }
+  
   function setMenu(open, returnFocus = false) {
     if (!menuButton || !nav) return;
     const expanded = compactNav.matches && open;

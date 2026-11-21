@@ -1,22 +1,27 @@
 'use strict';
 const RELEASE = {
-  "version": "1.0.0",
-  "token": "c2e0064419c510a33179a1463e6e7e910387ff51bf5ef754ffe822ea1f9138ef",
+  "version": "1.0.48",
+  "token": "ec7515e6c002bc92981341d20053e17b77f24774f099fb4b05e7a9b16582b226",
   "namespace": "aneesa-tariq-portfolio",
   "enabled": true,
   "offlineEnabled": true,
-  "precacheBytes": 1740467,
+  "precacheBytes": 1788391,
   "budgetBytes": 2000000,
   "resources": [
     {
       "path": "404.html",
-      "integrity": "sha256-5AjjEaWzN192DqZ+Fcbyjw3a+HyPeZ2Ru0xkNjZH2IM=",
-      "bytes": 3709
+      "integrity": "sha256-5NUh3cqUJMfB1eL/aHv8miCVaJcL3LhLJu9xwxv4o2s=",
+      "bytes": 3775
     },
     {
       "path": "assets/css/site.css",
-      "integrity": "sha256-X2XxW53T+HpQW6b4cn51yAxyQRdJpixxT0KNse5bot0=",
-      "bytes": 43167
+      "integrity": "sha256-b4rsAyxqBETTybIwlYzsI46aTyhqMe9b9+AVHHC3sUU=",
+      "bytes": 57984
+    },
+    {
+      "path": "assets/fonts/manrope-latin-variable.woff2",
+      "integrity": "sha256-jC3vAkwb8xqs82JK48TXASabTsPcdlwEgwg58NNrLZ4=",
+      "bytes": 24532
     },
     {
       "path": "assets/image/covers/about-1200.jpg",
@@ -105,8 +110,8 @@ const RELEASE = {
     },
     {
       "path": "assets/js/app.js",
-      "integrity": "sha256-NlXLyG+fPDoMRNy9d8ikBzmJAF7VNkEmy2vL7gtunJs=",
-      "bytes": 1819
+      "integrity": "sha256-Sc1ZBzJtW+cnERqNyQuWexr9QGmpysODqf15hXjzzzU=",
+      "bytes": 2417
     },
     {
       "path": "assets/js/data.js",
@@ -115,33 +120,33 @@ const RELEASE = {
     },
     {
       "path": "assets/js/pwa.js",
-      "integrity": "sha256-iaDzbvFIwVoRQCEgCVflyQ5bphIFHYGZpbn/RZpvg+I=",
-      "bytes": 10348
+      "integrity": "sha256-jLes4NWdnT5QHBfw21xyrro6hg4oVWwvu79Z7CdsWGg=",
+      "bytes": 10506
     },
     {
       "path": "assets/js/ui.js",
-      "integrity": "sha256-Y8juj53Bq7eG1aU3mvAAiBvda8shSH2EZ4VRiPUH6yc=",
-      "bytes": 19997
+      "integrity": "sha256-FOjWBdb1TluWc1UoaFHzxv13ihWKCWOu7732tsP98N8=",
+      "bytes": 22666
     },
     {
       "path": "assets/json/content.json",
-      "integrity": "sha256-Oj+/leuM6mKBggKXR548tlbBZBrr7O1aqRJF7/1jMWI=",
-      "bytes": 26418
+      "integrity": "sha256-6DvUgjuMyQcL+9CvL7lTk4nKjodlAI6oG7Ppm2K3N1s=",
+      "bytes": 27221
     },
     {
       "path": "assets/json/settings.json",
-      "integrity": "sha256-WWT6lzzdTSK1uvDK+Fmgd8oV/vSRRBw3kyhbI4YqVr8=",
-      "bytes": 5163
+      "integrity": "sha256-nFcjOS5wQW8TvbGDN9o3ktU9/nc/zgLFnGgaQYmQO4M=",
+      "bytes": 5310
     },
     {
       "path": "assets/json/version.json",
-      "integrity": "sha256-hwunE1SUAxHR3rvw/fvWhheanxwKSctz8oi3dv145ME=",
-      "bytes": 84
+      "integrity": "sha256-4kMvJHcQoZf9iTkpUfwBURCZ80RqTEwxedWtk0Ka7q4=",
+      "bytes": 85
     },
     {
       "path": "index.html",
-      "integrity": "sha256-NobTwA2tApIPRLtghMLbgl7Vg6qU3c5krpE0wD2JL1Q=",
-      "bytes": 60812
+      "integrity": "sha256-ZNbLYL3qRYVJv8nRn+1gIiGFkPSSlOdsoWYKR6wTKOo=",
+      "bytes": 64879
     },
     {
       "path": "manifest.json",
@@ -150,8 +155,8 @@ const RELEASE = {
     },
     {
       "path": "offline.html",
-      "integrity": "sha256-YZdr3/Qs9O1vqpf/9vzdm+GLe8KlOAVbo8QmVqReCOk=",
-      "bytes": 3818
+      "integrity": "sha256-aaA3bu0zWtYibqBpmAKfUQLpreavj1Tp46jpoD4NDbY=",
+      "bytes": 3884
     }
   ]
 };

@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "meta": {
     "title": "Aneesa Tariq | Business Development & Client Acquisition Specialist",
     "description": "Aneesa Tariq is a business development and client acquisition specialist in Islamabad, Pakistan, focused on B2B lead generation, tailored outreach, proposals, and client coordination.",
@@ -431,9 +431,26 @@
   },
   "footer": {
     "signature": "Considered conversations. Meaningful connections.",
-    "copyright": "Aneesa Tariq. All rights reserved.",
-    "privacyNote": "No analytics or tracking. Contact takes place through your email app.",
+    "copyright": "2026 Aneesa Tariq. All rights reserved.",
+    "disclaimer": "Business Development & Client Acquisition Specialist · Islamabad, Pakistan · Developed by Inixio Technologies",
     "backToTopLabel": "Back to the beginning"
+  },
+  "inixioProfile": {
+    "name": "Inixio Technologies",
+    "description": "Inixio Technologies is a software development company specializing in web and mobile applications, DevOps solutions, AI-driven systems, and automation technologies.",
+    "logo": "assets/image/inixio/logo.png",
+    "ceoImage": "assets/image/inixio/ceo.png",
+    "ceoImageAlt": "Atta Ullah Tariq, CEO and Founder of Inixio Technologies",
+    "founder": "Atta Ullah Tariq",
+    "title": "CEO & Founder",
+    "designation": "Full-Stack Developer & DevOps Engineer",
+    "contactTitle": "Contact Information",
+    "websiteLabel": "Website",
+    "website": "https://inixiotechnologies.com",
+    "emailLabel": "Email",
+    "email": "info@inixiotechnologies.com",
+    "phoneLabel": "Phone",
+    "phone": "+92 (333) 665 8622"
   },
   "verifiedMetrics": []
 }

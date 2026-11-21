@@ -191,6 +191,7 @@ export async function initPWA(context, ui) {
   });
   document.addEventListener('focusout', () => setTimeout(renderNotice, 0));
   ui.dialog.element?.addEventListener('close', renderNotice);
+  ui.dialog.secondaryElement?.addEventListener('close', renderNotice);
   renderNotice();
   if (!capable) {
     document.documentElement.dataset.pwaStatus = 'unsupported';
@@ -265,7 +266,9 @@ export async function initPWA(context, ui) {
     checkRelease();
   });
   try {
-    registration = await navigator.serviceWorker.register(new URL('sw.js', baseURL), {
+    const workerURL = new URL('sw.js', baseURL);
+    workerURL.searchParams.set('v', version.version);
+    registration = await navigator.serviceWorker.register(workerURL, {
       scope: baseURL.href, updateViaCache: 'none'
     });
     document.documentElement.dataset.pwaStatus = 'registered';

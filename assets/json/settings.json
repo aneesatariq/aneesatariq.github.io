@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "productionURL": "https://aneesatariq.github.io/",
   "deployment": {
     "basePath": "./",
@@ -19,7 +19,7 @@
     },
     "typography": {
       "display": "Georgia, 'Times New Roman', serif",
-      "body": "'Segoe UI', 'Helvetica Neue', sans-serif"
+      "body": "Manrope, 'Segoe UI', 'Helvetica Neue', sans-serif"
     }
   },
   "features": {
@@ -142,6 +142,12 @@
         "height": 630,
         "type": "image/jpeg",
         "alt": "Aneesa Tariq — Business Development & Client Acquisition Specialist. International B2B Collaboration."
+      }
+    },
+    "fonts": {
+      "manrope": {
+        "src": "assets/fonts/manrope-latin-variable.woff2",
+        "type": "font/woff2"
       }
     },
     "icons": {

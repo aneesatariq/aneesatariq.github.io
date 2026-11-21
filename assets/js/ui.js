@@ -98,10 +98,12 @@ export function initUI(context) {
     try { active?.onDismiss?.(); } catch { /* An optional integration must not interrupt UI controls. */ }
   });
 
-  // One native dialog owns modality, focus containment, Escape, and content restoration.
+  // Native dialogs provide modality and keyboard containment; detail content returns to its source.
   const dialogElement = $('#scope-dialog');
+  const inixioElement = $('#inixio-modal');
   const dialogMount = $('#dialog-content');
   let dialogState = null;
+  let inixioTrigger = null;
   function restoreDialog() {
     if (!dialogState) return;
     const { placeholder, node, trigger, headings } = dialogState;
@@ -139,8 +141,9 @@ export function initUI(context) {
       }
     },
     close() { if (dialogElement?.open) dialogElement.close(); },
-    isOpen() { return Boolean(dialogElement?.open); },
-    element: dialogElement
+    isOpen() { return Boolean(dialogElement?.open || inixioElement?.open); },
+    element: dialogElement,
+    secondaryElement: inixioElement
   };
   dialogElement?.addEventListener('close', restoreDialog);
   dialogElement?.addEventListener('cancel', (event) => { event.preventDefault(); dialog.close(); });
@@ -161,6 +164,55 @@ export function initUI(context) {
     } else if (!event.shiftKey && (document.activeElement === last || document.activeElement === $('#dialog-title'))) {
       event.preventDefault(); first.focus();
     }
+  });
+  const inixioTriggerButton = $('[data-open-inixio]');
+  const inixioCloseButton = $('[data-close-inixio]');
+  let inixioCloseTimer;
+  const closeInixio = () => {
+    if (!inixioElement?.open) return;
+    if (reducedMotion.matches) { inixioElement.close(); return; }
+    clearTimeout(inixioCloseTimer);
+    inixioElement.dataset.closing = 'true';
+    inixioCloseTimer = setTimeout(() => inixioElement.close(), 180);
+  };
+  inixioTriggerButton?.addEventListener('click', () => {
+    if (!inixioElement?.showModal || inixioElement.open || dialogElement?.open) return;
+    inixioTrigger = inixioTriggerButton;
+    dismissWelcome({ remember: false });
+    if (noticeStack) noticeStack.hidden = true;
+    inixioElement.showModal();
+    document.body.classList.add('dialog-open');
+    inixioElement.scrollTop = 0;
+    $('#inixio-title')?.focus({ preventScroll: true });
+  });
+  inixioCloseButton?.addEventListener('click', closeInixio);
+  inixioElement?.addEventListener('cancel', (event) => { event.preventDefault(); closeInixio(); });
+  inixioElement?.addEventListener('click', (event) => {
+    if (event.target !== inixioElement) return;
+    const bounds = inixioElement.getBoundingClientRect();
+    if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) closeInixio();
+  });
+  inixioElement?.addEventListener('keydown', (event) => {
+    if (event.key !== 'Tab') return;
+    const controls = $$('a[href], button:not([disabled]), input:not([disabled]), textarea:not([disabled]), select:not([disabled]), [tabindex="0"]', inixioElement).filter((node) => node.getClientRects().length);
+    const first = controls[0];
+    const last = controls.at(-1);
+    if (!first) { event.preventDefault(); return; }
+    if (event.shiftKey && (document.activeElement === first || document.activeElement === $('#inixio-title'))) {
+      event.preventDefault(); last.focus();
+    } else if (!event.shiftKey && (document.activeElement === last || document.activeElement === $('#inixio-title'))) {
+      event.preventDefault(); first.focus();
+    }
+  });
+  inixioElement?.addEventListener('close', () => {
+    clearTimeout(inixioCloseTimer);
+    delete inixioElement.dataset.closing;
+    if (!dialogElement?.open) {
+      document.body.classList.remove('dialog-open');
+      if (noticeStack) noticeStack.hidden = false;
+    }
+    if (inixioTrigger?.isConnected && !inixioTrigger.closest('[hidden]')) inixioTrigger.focus({ preventScroll: true });
+    inixioTrigger = null;
   });
   if (enabled('detailDialogs') && typeof dialogElement?.showModal === 'function') {
     $$('[data-open-scope]').forEach((button) => {

@@ -20,7 +20,7 @@ export function initUI(context) {
   const welcome = $('#welcome-panel');
   const noticeStack = $('#notice-stack');
   const banner = $('#pwa-banner');
-  const storageScope = `${settings?.welcomePopup?.storageKey || 'aneesa-tariq:welcome:v1'}:${baseURL.origin}${baseURL.pathname}`;
+  const storageScope = `${settings?.welcomePopup?.storageKey || 'aneesa-shell:v1'}:${baseURL.origin}${baseURL.pathname}`;
   let welcomeTimer;
   let welcomeDismissed = false;
   const hadWelcome = () => {

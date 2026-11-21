@@ -44,7 +44,7 @@
     "enabled": false,
     "display": "first-visit",
     "delayMs": 1800,
-    "storageKey": "aneesa-tariq:welcome:v1",
+    "storageKey": "aneesa-shell:v1",
     "dismissible": true,
     "modal": false,
     "stealFocus": false,

@@ -1,22 +1,22 @@
 'use strict';
 const RELEASE = {
-  "version": "1.0.48",
-  "token": "ec7515e6c002bc92981341d20053e17b77f24774f099fb4b05e7a9b16582b226",
+  "version": "1.0.49",
+  "token": "23c786c8b9f1a06d0dd78d992b93bbea60354eea25b8fb307d9c6d72f14f9157",
   "namespace": "aneesa-tariq-portfolio",
   "enabled": true,
   "offlineEnabled": true,
-  "precacheBytes": 1788391,
+  "precacheBytes": 1884505,
   "budgetBytes": 2000000,
   "resources": [
     {
       "path": "404.html",
-      "integrity": "sha256-5NUh3cqUJMfB1eL/aHv8miCVaJcL3LhLJu9xwxv4o2s=",
-      "bytes": 3775
+      "integrity": "sha256-lBeLDN2AxDDbACTNSPW5SVow0tYU6Jj3lhuOf20XX/A=",
+      "bytes": 6134
     },
     {
       "path": "assets/css/site.css",
-      "integrity": "sha256-b4rsAyxqBETTybIwlYzsI46aTyhqMe9b9+AVHHC3sUU=",
-      "bytes": 57984
+      "integrity": "sha256-gsqsyLaOgy20hUP8AT+DleYduSrhpOeW+AgAB2RYOBI=",
+      "bytes": 65353
     },
     {
       "path": "assets/fonts/manrope-latin-variable.woff2",
@@ -140,13 +140,13 @@ const RELEASE = {
     },
     {
       "path": "assets/json/version.json",
-      "integrity": "sha256-4kMvJHcQoZf9iTkpUfwBURCZ80RqTEwxedWtk0Ka7q4=",
+      "integrity": "sha256-7lbEdxNdkGaqCBmRjSXMD+YMTob8GA1xYEtLDtPS61E=",
       "bytes": 85
     },
     {
       "path": "index.html",
-      "integrity": "sha256-ZNbLYL3qRYVJv8nRn+1gIiGFkPSSlOdsoWYKR6wTKOo=",
-      "bytes": 64879
+      "integrity": "sha256-mfs0zEd3qOnBW7FUAd1HWF2xTAuGbOdd9WiKfQv68B4=",
+      "bytes": 148889
     },
     {
       "path": "manifest.json",
@@ -155,8 +155,8 @@ const RELEASE = {
     },
     {
       "path": "offline.html",
-      "integrity": "sha256-aaA3bu0zWtYibqBpmAKfUQLpreavj1Tp46jpoD4NDbY=",
-      "bytes": 3884
+      "integrity": "sha256-bISPJ4boWiTrxESxyfnfDtgi80YzolmBsjiavgWFLnc=",
+      "bytes": 6260
     }
   ]
 };

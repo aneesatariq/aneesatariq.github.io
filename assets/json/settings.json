@@ -11,11 +11,12 @@
       "blue": "#245AE3",
       "cyan": "#5DC7DD",
       "white": "#FFFFFF",
-      "warmWhite": "#F7F6F2",
+      "warmWhite": "#F3F5F7",
+      "paper": "#F3F5F7",
       "gold": "#D9B969",
       "ink": "#12263E",
       "muted": "#52657A",
-      "border": "#D7DFE8"
+      "border": "#D2DAE3"
     },
     "typography": {
       "display": "Georgia, 'Times New Roman', serif",
@@ -40,7 +41,7 @@
     "enabled": false
   },
   "welcomePopup": {
-    "enabled": true,
+    "enabled": false,
     "display": "first-visit",
     "delayMs": 1800,
     "storageKey": "aneesa-tariq:welcome:v1",

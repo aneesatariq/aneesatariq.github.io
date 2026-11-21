@@ -20,10 +20,23 @@
             :root {
                 color-scheme: light;
                 --navy: #0b1f38;
-                --paper: #f7f6f2;
+                --paper: #f3f5f7;
                 --gold: #d9b969;
                 --ink: #12263e;
-                --line: #d7dfe8;
+                --line: #d2dae3;
+            }
+            .skip-link {
+                position: absolute;
+                left: 1rem;
+                top: 1rem;
+                z-index: 100;
+                padding: 0.75rem 1rem;
+                background: #fff;
+                color: var(--navy);
+                transform: translateY(-160%);
+            }
+            .skip-link:focus {
+                transform: none;
             }
             * {
                 box-sizing: border-box;
@@ -144,14 +157,15 @@
         </style>
     </head>
     <body>
+        <a class="skip-link" href="#main-content">Skip to main content</a>
         <header>
             <span class="mark" aria-hidden="true">AT</span>
             <a class="name" href="./">Aneesa Tariq</a>
         </header>
-        <main id="main-content">
+        <main id="main-content" tabindex="-1">
             <p class="eyebrow">A pause in the connection</p>
             <h1>Let&#39;s reconnect.</h1>
-            <p>This address isn&#39;t available from the saved portfolio right now. Check your connection and try again, or return to the portfolio if it has been saved on this device.</p>
+            <p>You appear to be offline. Check your connection and try again, or return to the portfolio when you are back online.</p>
             <nav aria-label="Main navigation">
                 <a class="home" href="./">Return to the portfolio</a>
                 <a href="./#contact">Start a conversation</a>

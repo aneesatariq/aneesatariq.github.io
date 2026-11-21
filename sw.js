@@ -1,7 +1,7 @@
 'use strict';
 
 // Minimal PWA worker: network-first, no SRI precache, no plain-text error pages.
-const VERSION = '1.0.54';
+const VERSION = '1.0.55';
 const CACHE = `aneesa-tariq-portfolio:minimal:${VERSION}`;
 const SHELL = ['offline.html'];
 

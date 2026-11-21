@@ -66,7 +66,7 @@
       "updateDescription": "Save any email draft first. Update and reload this tab when you're ready; unsent text here will be cleared.",
       "updateAction": "Update and reload",
       "updateDismiss": "Later",
-      "offlineMessage": "You're offline. Saved portfolio content may still be available; external links and email delivery need a connection.",
+      "offlineMessage": "You're offline. Reconnect to browse the full portfolio; email still needs a connection.",
       "onlineMessage": "You're back online.",
       "updateError": "The update could not be applied. Please try again when you're online.",
       "offlineTitle": "A pause in the connection",
@@ -211,9 +211,9 @@
     ]
   },
   "portfolio": {
-    "eyebrow": "Representative portfolio",
-    "title": "A closer look at the work I can support.",
-    "description": "Six representative service scopes—not completed client case studies. Each outlines a possible engagement, my direct responsibilities, and specialist support that may be coordinated.",
+    "eyebrow": "Engagement shapes",
+    "title": "How a collaboration could take shape.",
+    "description": "Illustrative engagement outlines—not completed client case studies. Each shows a possible scope, my direct responsibilities, and where specialist delivery may be coordinated.",
     "disclaimer": "These are illustrative capabilities and proposed deliverables, not claims of completed projects or client results. Final scope is agreed for each engagement.",
     "categories": [
       { "id": "research", "label": "Research" },
@@ -295,7 +295,7 @@
   "tools": {
     "eyebrow": "Tools & platforms",
     "title": "Familiar platforms. Purposeful workflows.",
-    "description": "Tools I am familiar with across client relationships, prospecting, outreach, freelance marketplaces, commerce, and advertising.",
+    "description": "Platforms I work with for relationships, prospecting, and outreach. Listing means familiarity—not specialist technical certification or delivery ownership.",
     "disclaimer": "Listed platforms indicate familiarity only—not certification, endorsement, or a claim of specialist technical proficiency.",
     "categories": [
       { "id": "crm", "label": "CRM" },
@@ -336,7 +336,12 @@
         "role": "Bidding & Client Communication",
         "startDate": "2026-06",
         "endDate": null,
-        "period": "June 2026–Present"
+        "period": "June 2026–Present",
+        "highlights": [
+          "Prepare and refine bids aligned to client briefs and service fit.",
+          "Coordinate clarifying questions and follow-up communication.",
+          "Keep opportunity context organized for handoff to delivery specialists."
+        ]
       },
       {
         "id": "freelance-business-development",
@@ -344,7 +349,12 @@
         "role": "Freelance Business Development & Account Management",
         "startDate": "2023-12",
         "endDate": "2025-12",
-        "period": "December 2023–December 2025"
+        "period": "December 2023–December 2025",
+        "highlights": [
+          "Researched prospects and shaped personalized outreach for B2B opportunities.",
+          "Managed client conversations, proposals, and ongoing account follow-up.",
+          "Supported scoping conversations and coordinated next steps with specialists."
+        ]
       },
       {
         "id": "cyber-soft-vantage",
@@ -352,7 +362,12 @@
         "role": "Sales Executive",
         "startDate": "2025-02",
         "endDate": "2025-05",
-        "period": "February 2025–May 2025"
+        "period": "February 2025–May 2025",
+        "highlights": [
+          "Supported pipeline conversations and prospect qualification.",
+          "Prepared outreach and follow-ups for active sales opportunities.",
+          "Maintained clear records of commitments and next actions."
+        ]
       }
     ]
   },

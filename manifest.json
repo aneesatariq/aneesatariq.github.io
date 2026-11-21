@@ -25,7 +25,7 @@
       "purpose": "any"
     },
     {
-      "src": "./assets/image/icons/icon-maskable-512.png",
+      "src": "./assets/image/icons/imsk-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"

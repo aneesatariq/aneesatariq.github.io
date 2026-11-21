@@ -154,8 +154,9 @@
       "favicon": { "src": "assets/image/icons/favicon.svg", "type": "image/svg+xml", "sizes": "any" },
       "icon192": { "src": "assets/image/icons/icon-192.png", "type": "image/png", "sizes": "192x192", "purpose": "any" },
       "icon512": { "src": "assets/image/icons/icon-512.png", "type": "image/png", "sizes": "512x512", "purpose": "any" },
-      "maskable512": { "src": "assets/image/icons/icon-maskable-512.png", "type": "image/png", "sizes": "512x512", "purpose": "maskable" },
-      "appleTouch": { "src": "assets/image/icons/apple-touch-icon.png", "type": "image/png", "sizes": "180x180" }
+      "maskable512": { "src": "assets/image/icons/imsk-512.png", "type": "image/png", "sizes": "512x512", "purpose": "maskable" },
+      "appleTouch": { "src": "assets/image/icons/favicon.png", "type": "image/png", "sizes": "180x180" },
+      "faviconIco": { "src": "assets/image/icons/favicon.ico", "type": "image/x-icon", "sizes": "48x48" }
     }
   }
 }

@@ -1,17 +1,17 @@
 'use strict';
 const RELEASE = {
-  "version": "1.0.50",
-  "token": "3ff9bca3420a3277544a4ae7c5cc8cafb094309282b9282737a7d67dac5ba0c7",
+  "version": "1.0.52",
+  "token": "f9dafb4f4b93935fd9b4793c8410038fa12db54809e7b5212a1580f03868dbea",
   "namespace": "aneesa-tariq-portfolio",
   "enabled": true,
   "offlineEnabled": true,
-  "precacheBytes": 1888906,
+  "precacheBytes": 1893655,
   "budgetBytes": 2000000,
   "resources": [
     {
       "path": "404.html",
-      "integrity": "sha256-lBeLDN2AxDDbACTNSPW5SVow0tYU6Jj3lhuOf20XX/A=",
-      "bytes": 6134
+      "integrity": "sha256-YpatJue14cQ41eCMozfwuXwyMtEZbtpbNKwklgv1mBc=",
+      "bytes": 6271
     },
     {
       "path": "assets/css/site.css",
@@ -84,7 +84,12 @@ const RELEASE = {
       "bytes": 90702
     },
     {
-      "path": "assets/image/icons/apple-touch-icon.png",
+      "path": "assets/image/icons/favicon.ico",
+      "integrity": "sha256-7CsQqJFkyzruHPwsfK+jIMDOXnOZR3QsDycfA2NhvIQ=",
+      "bytes": 4359
+    },
+    {
+      "path": "assets/image/icons/favicon.png",
       "integrity": "sha256-ydXCIOizocxdfhjOFMa88dwv0mgdseQsbb7+olkoaQs=",
       "bytes": 6390
     },
@@ -104,7 +109,7 @@ const RELEASE = {
       "bytes": 27190
     },
     {
-      "path": "assets/image/icons/icon-maskable-512.png",
+      "path": "assets/image/icons/imsk-512.png",
       "integrity": "sha256-jSjJC/DoMAAfbY82c3ASMWWPcq30uOEDmnw7X+A67No=",
       "bytes": 10377
     },
@@ -135,28 +140,28 @@ const RELEASE = {
     },
     {
       "path": "assets/json/settings.json",
-      "integrity": "sha256-nFcjOS5wQW8TvbGDN9o3ktU9/nc/zgLFnGgaQYmQO4M=",
-      "bytes": 5310
+      "integrity": "sha256-2AHZitYQK03l1k7ELvuhb//uI5I+A3ZHaUh+akRFZ8I=",
+      "bytes": 5399
     },
     {
       "path": "assets/json/version.json",
-      "integrity": "sha256-pfPixR03j1i/dYPYl/Om2p17HIuo8Z9jf4J19yT37zQ=",
+      "integrity": "sha256-yTk3n+SHKkwklI8n15Wf+qc85atqbMpd5Ko90/ux6Y8=",
       "bytes": 85
     },
     {
       "path": "index.html",
-      "integrity": "sha256-mXApoHAHF54sEPLGb7MLB2D0gZFZoPbCyYvl0Ioo5xs=",
-      "bytes": 149319
+      "integrity": "sha256-XFnzXbSc2vvFWP9yaWb+Z9Kod/pmo9qdZasfrlXI1mY=",
+      "bytes": 149392
     },
     {
       "path": "manifest.json",
-      "integrity": "sha256-FTGEbnoC0b2gEwnP+zIKNqHCkL2njnHZbC5yYfbiL/A=",
-      "bytes": 840
+      "integrity": "sha256-5FPhe2HFgMj/4VAFkrqIjRISOAo2T/Z2b5cTeiqyFHc=",
+      "bytes": 831
     },
     {
       "path": "offline.html",
-      "integrity": "sha256-bISPJ4boWiTrxESxyfnfDtgi80YzolmBsjiavgWFLnc=",
-      "bytes": 6260
+      "integrity": "sha256-QSY8AVwDMwpdvCb+vOrhAMLJ7Yim8h/mQ/5SUrH+Ev0=",
+      "bytes": 6360
     }
   ]
 };

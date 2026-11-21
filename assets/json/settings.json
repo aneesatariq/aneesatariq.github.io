@@ -1,0 +1,155 @@
+{
+  "schemaVersion": "1.0.0",
+  "productionURL": "https://aneesatariq.github.io/",
+  "deployment": {
+    "basePath": "./",
+    "resolveAssetsRelativeToDocument": true
+  },
+  "design": {
+    "colors": {
+      "navy": "#0B1F38",
+      "blue": "#245AE3",
+      "cyan": "#5DC7DD",
+      "white": "#FFFFFF",
+      "warmWhite": "#F7F6F2",
+      "gold": "#D9B969",
+      "ink": "#12263E",
+      "muted": "#52657A",
+      "border": "#D7DFE8"
+    },
+    "typography": {
+      "display": "Georgia, 'Times New Roman', serif",
+      "body": "'Segoe UI', 'Helvetica Neue', sans-serif"
+    }
+  },
+  "features": {
+    "portfolioFilters": true,
+    "toolFilters": true,
+    "detailDialogs": true,
+    "scrollReveal": true,
+    "academicCounters": true,
+    "welcomePopup": true,
+    "copyEmail": true,
+    "contactComposer": true,
+    "backToTop": true,
+    "pwa": true,
+    "verifiedMetrics": false,
+    "telemetry": false
+  },
+  "verifiedMetrics": {
+    "enabled": false
+  },
+  "welcomePopup": {
+    "enabled": true,
+    "display": "first-visit",
+    "delayMs": 1800,
+    "storageKey": "aneesa-tariq:welcome:v1",
+    "dismissible": true,
+    "modal": false,
+    "stealFocus": false,
+    "storageFailureBehavior": "session-only"
+  },
+  "motion": {
+    "respectReducedMotion": true,
+    "revealDurationMs": 600,
+    "counterDurationMs": 900
+  },
+  "contact": {
+    "mode": "mailto",
+    "storeMessages": false,
+    "composer": {
+      "subjectMaxLength": 160,
+      "messageMaxLength": 2000
+    }
+  },
+  "pwa": {
+    "enabled": true,
+    "id": ".",
+    "name": "Aneesa Tariq — Business Development",
+    "shortName": "Aneesa Tariq",
+    "description": "Business development, client acquisition, and international collaboration with Aneesa Tariq.",
+    "lang": "en",
+    "startURL": ".",
+    "scope": ".",
+    "display": "standalone",
+    "orientation": "any",
+    "themeColor": "#0B1F38",
+    "backgroundColor": "#F7F6F2",
+    "cacheNamespace": "aneesa-tariq-portfolio",
+    "scopeCacheByDeployment": true,
+    "install": {
+      "enabled": true,
+      "autoPrompt": false,
+      "requireSupportedBrowser": true
+    },
+    "update": {
+      "enabled": true,
+      "requireConfirmation": true,
+      "reloadAfterActivation": true
+    },
+    "offline": {
+      "enabled": true,
+      "cacheOriginalImages": false,
+      "maxPrecacheBytes": 2000000
+    },
+    "telemetry": false
+  },
+  "assets": {
+    "images": {
+      "hero": {
+        "src": "assets/image/covers/hero-800.jpg",
+        "width": 800,
+        "height": 1000,
+        "alt": "Aneesa Tariq in a blue headscarf and denim jacket, looking down outdoors.",
+        "aspectRatio": "4 / 5",
+        "objectPosition": "50% 50%",
+        "sources": {
+          "webp": [
+            { "src": "assets/image/covers/hero-480.webp", "width": 480, "height": 600 },
+            { "src": "assets/image/covers/hero-800.webp", "width": 800, "height": 1000 },
+            { "src": "assets/image/covers/hero-1200.webp", "width": 1200, "height": 1500 }
+          ],
+          "jpeg": [
+            { "src": "assets/image/covers/hero-480.jpg", "width": 480, "height": 600 },
+            { "src": "assets/image/covers/hero-800.jpg", "width": 800, "height": 1000 },
+            { "src": "assets/image/covers/hero-1200.jpg", "width": 1200, "height": 1500 }
+          ]
+        }
+      },
+      "about": {
+        "src": "assets/image/covers/about-800.jpg",
+        "width": 800,
+        "height": 1000,
+        "alt": "Aneesa Tariq outdoors in a blue headscarf, with her face and henna-decorated hand visible.",
+        "aspectRatio": "4 / 5",
+        "objectPosition": "50% 50%",
+        "sources": {
+          "webp": [
+            { "src": "assets/image/covers/about-480.webp", "width": 480, "height": 600 },
+            { "src": "assets/image/covers/about-800.webp", "width": 800, "height": 1000 },
+            { "src": "assets/image/covers/about-1200.webp", "width": 1200, "height": 1500 }
+          ],
+          "jpeg": [
+            { "src": "assets/image/covers/about-480.jpg", "width": 480, "height": 600 },
+            { "src": "assets/image/covers/about-800.jpg", "width": 800, "height": 1000 },
+            { "src": "assets/image/covers/about-1200.jpg", "width": 1200, "height": 1500 }
+          ]
+        }
+      },
+      "social": {
+        "src": "assets/image/covers/og-image.jpg",
+        "width": 1200,
+        "height": 630,
+        "type": "image/jpeg",
+        "alt": "Aneesa Tariq — Business Development & Client Acquisition Specialist. International B2B Collaboration."
+      }
+    },
+    "icons": {
+      "favicon": { "src": "assets/image/icons/favicon.svg", "type": "image/svg+xml", "sizes": "any" },
+      "icon192": { "src": "assets/image/icons/icon-192.png", "type": "image/png", "sizes": "192x192", "purpose": "any" },
+      "icon512": { "src": "assets/image/icons/icon-512.png", "type": "image/png", "sizes": "512x512", "purpose": "any" },
+      "maskable512": { "src": "assets/image/icons/icon-maskable-512.png", "type": "image/png", "sizes": "512x512", "purpose": "maskable" },
+      "appleTouch": { "src": "assets/image/icons/apple-touch-icon.png", "type": "image/png", "sizes": "180x180" }
+    }
+  }
+}

@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="noindex, follow" />
+        <meta name="theme-color" content="#0B1F38" />
+        <title>This page isn&#39;t here. | Aneesa Tariq</title>
+        <base href="https://aneesatariq.github.io/" />
+        <script>
+            (() => {
+                const base = document.querySelector("base");
+                const configured = new URL(base.href);
+                if (location.pathname.startsWith(configured.pathname)) {
+                    base.href = new URL(configured.pathname, location.origin).href;
+                }
+            })();
+        </script>
+        <style>
+            :root {
+                color-scheme: light;
+                --navy: #0b1f38;
+                --paper: #f7f6f2;
+                --gold: #d9b969;
+                --ink: #12263e;
+                --line: #d7dfe8;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                margin: 0;
+                background: var(--paper);
+                color: var(--ink);
+                font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+                line-height: 1.65;
+            }
+            a {
+                color: inherit;
+                text-underline-offset: 0.25em;
+            }
+            a:focus-visible,
+            button:focus-visible {
+                outline: 3px solid var(--gold);
+                outline-offset: 6px;
+            }
+            header,
+            main,
+            footer {
+                width: min(100% - 3rem, 68rem);
+                margin-inline: auto;
+            }
+            header {
+                padding-block: 2rem;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
+            .mark {
+                display: grid;
+                place-items: center;
+                width: 3rem;
+                height: 3rem;
+                border: 1px solid var(--gold);
+                font-family: Georgia, "Times New Roman", serif;
+                color: var(--navy);
+            }
+            .name {
+                text-decoration: none;
+                font-weight: 600;
+            }
+            main {
+                padding-block: clamp(3rem, 10vw, 8rem);
+                min-height: 62vh;
+                position: relative;
+                border-top: 1px solid var(--line);
+            }
+            .eyebrow {
+                text-transform: uppercase;
+                letter-spacing: 0.18em;
+                font-size: 0.75rem;
+                font-weight: 600;
+            }
+            h1 {
+                font-family: Georgia, "Times New Roman", serif;
+                font-size: clamp(3rem, 9vw, 6rem);
+                font-weight: 400;
+                letter-spacing: -0.055em;
+                line-height: 1.05;
+                max-width: 12ch;
+                margin: 1.5rem 0;
+            }
+            main p:not(.eyebrow) {
+                max-width: 38rem;
+            }
+            nav {
+                display: flex;
+                gap: 1.5rem;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-top: 2rem;
+            }
+            .home {
+                display: inline-block;
+                background: var(--navy);
+                color: var(--paper);
+                padding: 0.85rem 1.3rem;
+                text-decoration: none;
+            }
+            .code {
+                margin-top: 3rem;
+                font-size: 0.8rem;
+                letter-spacing: 0.08em;
+            }
+            button {
+                font: inherit;
+                color: inherit;
+                border: 0;
+                background: none;
+                padding: 0.5rem 0;
+                cursor: pointer;
+                text-decoration: underline;
+                text-underline-offset: 0.25em;
+            }
+            footer {
+                border-top: 1px solid var(--line);
+                padding-block: 1.5rem 2.5rem;
+                font-size: 0.85rem;
+            }
+            footer a {
+                overflow-wrap: anywhere;
+            }
+            footer p {
+                max-width: 42rem;
+            }
+            [hidden] {
+                display: none !important;
+            }
+            @media (prefers-reduced-motion: no-preference) {
+                .home {
+                    transition: transform 0.2s;
+                }
+                .home:hover {
+                    transform: translateY(-2px);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <span class="mark" aria-hidden="true">AT</span>
+            <a class="name" href="./">Aneesa Tariq</a>
+        </header>
+        <main id="main-content">
+            <p class="eyebrow">A different direction</p>
+            <h1>This page isn&#39;t here.</h1>
+            <p>The address may have changed, or the link may be incomplete. Return to the portfolio to explore my experience and approach.</p>
+            <nav aria-label="Main navigation">
+                <a class="home" href="./">Return to the portfolio</a>
+                <a href="./#contact">Start a conversation</a>
+            </nav>
+            <p class="code">Not found / 404</p>
+        </main>
+        <footer>
+            <a href="mailto:aneesaa.tariq@gmail.com">aneesaa.tariq@gmail.com</a>
+            <p>Email opens your email app; this website does not send or store messages.</p>
+            <p>© Aneesa Tariq. All rights reserved. No analytics or tracking. Contact takes place through your email app.</p>
+        </footer>
+        <script>
+            const retry = document.getElementById("retry");
+            if (retry) {
+                retry.addEventListener("click", () => location.reload());
+                retry.hidden = false;
+            }
+        </script>
+    </body>
+</html>

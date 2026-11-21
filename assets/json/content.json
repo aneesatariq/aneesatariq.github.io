@@ -1,0 +1,440 @@
+{
+  "schemaVersion": "1.0.0",
+  "meta": {
+    "title": "Aneesa Tariq | Business Development & Client Acquisition Specialist",
+    "description": "Aneesa Tariq is a business development and client acquisition specialist in Islamabad, Pakistan, focused on B2B lead generation, tailored outreach, proposals, and client coordination.",
+    "language": "en",
+    "locale": "en_US"
+  },
+  "profile": {
+    "name": "Aneesa Tariq",
+    "initials": "AT",
+    "role": "Business Development & Client Acquisition Specialist",
+    "email": "aneesaa.tariq@gmail.com",
+    "location": {
+      "city": "Islamabad",
+      "country": "Pakistan",
+      "label": "Islamabad, Pakistan"
+    },
+    "collaboration": "International Collaboration",
+    "workingHours": "EST-Aligned Working Hours",
+    "summary": "Business development with a personal, considered approach: relevant prospects, tailored proposals, clear client communication, and thoughtful coordination from first conversation to delivery handoff."
+  },
+  "nav": [
+    { "id": "home", "label": "Home" },
+    { "id": "about", "label": "About" },
+    { "id": "services", "label": "Services" },
+    { "id": "portfolio", "label": "Portfolio" },
+    { "id": "tools", "label": "Tools" },
+    { "id": "experience", "label": "Experience" },
+    { "id": "education", "label": "Education" },
+    { "id": "contact", "label": "Contact" }
+  ],
+  "ui": {
+    "skipToContent": "Skip to main content",
+    "navigationLabel": "Main navigation",
+    "openMenu": "Open navigation",
+    "closeMenu": "Close navigation",
+    "backToTop": "Back to top",
+    "closeDialog": "Close details",
+    "viewDetails": "Explore the scope",
+    "allFilter": "All",
+    "portfolioFilterLabel": "Filter representative scopes",
+    "toolsFilterLabel": "Filter tools by category",
+    "resultsTemplate": "{count} {noun} shown",
+    "portfolioResultNoun": "representative scopes",
+    "toolsResultNoun": "tools",
+    "emptyResults": "Nothing in this category yet. Choose another filter to explore.",
+    "directResponsibilities": "My direct responsibilities",
+    "coordinatedSupport": "Specialist support I can coordinate",
+    "proposedDeliverables": "Proposed deliverables",
+    "representativeBadge": "Representative scope",
+    "toolFamiliarityLabel": "Platform familiarity",
+    "welcome": {
+      "title": "A thoughtful introduction.",
+      "message": "Explore my approach to business development, client relationships, and coordinated delivery. When something resonates, let's talk.",
+      "actionLabel": "Explore my expertise",
+      "actionHref": "#services",
+      "dismissLabel": "Dismiss welcome"
+    },
+    "pwa": {
+      "installLabel": "Keep this portfolio handy",
+      "installDescription": "Install a lightweight shortcut to revisit this portfolio.",
+      "installAction": "Install",
+      "installDismiss": "Not now",
+      "updateTitle": "A refreshed portfolio is ready",
+      "updateDescription": "Save any email draft first. Update and reload this tab when you're ready; unsent text here will be cleared.",
+      "updateAction": "Update and reload",
+      "updateDismiss": "Later",
+      "offlineMessage": "You're offline. Saved portfolio content may still be available; external links and email delivery need a connection.",
+      "onlineMessage": "You're back online.",
+      "updateError": "The update could not be applied. Please try again when you're online.",
+      "offlineTitle": "A pause in the connection",
+      "statusDismiss": "Dismiss",
+      "installHelpLabel": "Install options",
+      "installHelp": "Installation depends on your browser and device. If a native install prompt is available, this control will offer Install.",
+      "secureContextHelp": "Offline installation needs HTTPS or a loopback address and a compatible browser. The portfolio itself still works without installation.",
+      "iosHelp": "On iPhone or iPad, open this page in Safari and look for Share, then Add to Home Screen. Menu names and availability vary by OS version.",
+      "desktopHelp": "In a compatible desktop or Android browser, look for an install option in the address bar or browser menu. If none is offered, installation may not be supported or permitted.",
+      "bookmarkHelp": "You can always bookmark this page. Private browsing, device policies, and cleared website data can limit offline access.",
+      "installUnavailable": "An install prompt isn't available right now. Use Install options for browser guidance.",
+      "installAcceptedMessage": "Installation requested. Your browser will confirm when it is complete.",
+      "installedMessage": "The portfolio has been added to your device."
+    },
+    "fallback": {
+      "offline": {
+        "eyebrow": "A pause in the connection",
+        "title": "Let's reconnect.",
+        "description": "This address isn't available from the saved portfolio right now. Check your connection and try again, or return to the portfolio if it has been saved on this device.",
+        "code": "Offline / 503"
+      },
+      "notFound": {
+        "eyebrow": "A different direction",
+        "title": "This page isn't here.",
+        "description": "The address may have changed, or the link may be incomplete. Return to the portfolio to explore my experience and approach.",
+        "code": "Not found / 404"
+      },
+      "homeLabel": "Return to the portfolio",
+      "contactLabel": "Start a conversation",
+      "retryLabel": "Try this address again",
+      "emailNote": "Email opens your email app; this website does not send or store messages."
+    }
+  },
+  "home": {
+    "eyebrow": "Business development. Human connection.",
+    "title": "Growth starts with the right connection.",
+        "accentText": "right connection.",
+        "portraitTag": "People first. Purpose always.",
+        "portraitTagDetail": "Research · Outreach · Relationships",
+    "description": "I help businesses approach the right prospects, shape thoughtful proposals, and nurture client relationships—with clear communication at every step.",
+    "primaryAction": { "label": "Let's talk business", "href": "#contact" },
+    "secondaryAction": { "label": "Explore my expertise", "href": "#services" },
+    "portraitCaption": "A considered approach to meaningful business relationships."
+  },
+  "about": {
+    "eyebrow": "The person behind the process",
+    "title": "Thoughtful outreach. Lasting relationships.",
+    "paragraphs": [
+      "I'm Aneesa Tariq, a business development and client acquisition specialist based in Islamabad, Pakistan. My experience spans B2B lead generation, international client acquisition, freelance bidding, account management, and client communication.",
+      "I bring structure to the conversations around growth: researching prospects, tailoring proposals, following up with care, and keeping clients and delivery teams aligned on what comes next.",
+      "My focus is the business and relationship side of a project. When a scope calls for specialized technical implementation, I coordinate with the appropriate delivery specialists rather than presenting their work as my own technical expertise."
+    ],
+    "coreExpertiseTitle": "Core expertise",
+        "expertiseIntro": "The relationship side of business growth.",
+        "portraitCaption": "Aneesa Tariq · Islamabad, Pakistan",
+    "coreExpertise": [
+      { "id": "b2b-development", "title": "B2B business development & lead generation" },
+      { "id": "international-acquisition", "title": "International client acquisition" },
+      { "id": "linkedin-email-outreach", "title": "LinkedIn & email outreach" },
+      { "id": "bidding-proposals", "title": "Freelance bidding & tailored proposals" },
+      { "id": "client-relationships", "title": "Client relationships & account management" },
+      { "id": "pipeline-crm", "title": "Sales pipelines & CRM organization" },
+      { "id": "scoping-onboarding", "title": "Scoping, onboarding & project coordination" },
+      { "id": "virtual-delivery", "title": "Virtual teams & delivery coordination" },
+      { "id": "growth-support", "title": "Business growth support" },
+      { "id": "virtual-operations", "title": "Virtual & administrative operations" }
+    ],
+    "languagesTitle": "Languages",
+    "languages": [
+      { "id": "en", "name": "English" },
+      { "id": "ur", "name": "Urdu" },
+      { "id": "skr", "name": "Saraiki" }
+    ],
+    "internationalCollaboration": {
+      "title": "Across borders. In sync.",
+      "description": "International client communication and remote team coordination, with EST-aligned working hours to support productive conversations.",
+      "schedulingNote": "Specific meeting times and project arrangements are agreed directly."
+    }
+  },
+  "services": {
+    "eyebrow": "How I can support you",
+    "title": "A considered partner for your next stage.",
+    "description": "Focused business-development support, shaped around your offer, your audience, and the way you work.",
+    "implementationNote": "I lead the business-development, communication, and coordination work described here. Specialized technical, creative, advertising, or commerce implementation is scoped with the appropriate delivery team.",
+        "process": {
+          "eyebrow": "A clear way forward",
+          "title": "Listen. Align. Move forward.",
+          "items": [
+            { "title": "Understand the opportunity", "description": "We start with your offer, the people you want to reach, and the support that would be useful." },
+            { "title": "Shape the right approach", "description": "We agree on priorities, responsibilities, and practical deliverables before work begins." },
+            { "title": "Keep the conversation moving", "description": "Clear follow-ups and thoughtful handoffs keep the business and delivery sides connected." }
+          ]
+        },
+    "items": [
+      {
+        "id": "lead-generation",
+        "title": "B2B prospect research",
+        "summary": "Bring focus to your pipeline with relevant businesses, useful context, and a clear reason to connect.",
+        "directResponsibilities": ["Clarify the target customer and qualification criteria.", "Research prospective businesses and organize relevant contact context.", "Prepare an actionable prospect list for review."],
+        "coordinatedSupport": ["Specialist data enrichment or technical research workflows, when required and agreed."],
+        "proposedDeliverables": ["Target-customer research brief", "Organized prospect shortlist", "Qualification notes and next-step recommendations"]
+      },
+      {
+        "id": "client-acquisition",
+        "title": "Outreach & client acquisition",
+        "summary": "Start better conversations through relevant LinkedIn and email outreach, with follow-ups that feel personal.",
+        "directResponsibilities": ["Shape outreach around the prospect's context and your offer.", "Prepare personalized messages and follow-up sequences.", "Track replies and coordinate the next conversation."],
+        "coordinatedSupport": ["Email infrastructure, deliverability, or automation setup by the appropriate specialist."],
+        "proposedDeliverables": ["Outreach message framework", "Follow-up plan", "Response and conversation tracker"]
+      },
+      {
+        "id": "bids-proposals",
+        "title": "Freelance bids & proposals",
+        "summary": "Translate a client's brief into a relevant, well-structured proposal with a clear path to the next discussion.",
+        "directResponsibilities": ["Review opportunities for fit with the offered service.", "Tailor bids and proposals to the client's stated needs.", "Manage clarifications and follow-up communication."],
+        "coordinatedSupport": ["Technical feasibility, delivery estimates, and specialist solution input."],
+        "proposedDeliverables": ["Opportunity-fit notes", "Tailored proposal draft", "Clarification questions and follow-up tracker"]
+      },
+      {
+        "id": "account-management",
+        "title": "Client relationships & CRM",
+        "summary": "Keep the relationship moving with organized account context, attentive communication, and visible next steps.",
+        "directResponsibilities": ["Organize client records, pipeline stages, and follow-up tasks.", "Maintain clear account communication and meeting notes.", "Track open questions, commitments, and next actions."],
+        "coordinatedSupport": ["Custom CRM integrations, advanced automation, or technical configuration."],
+        "proposedDeliverables": ["Account and pipeline structure", "Client communication log", "Follow-up and action tracker"]
+      },
+      {
+        "id": "project-coordination",
+        "title": "Scoping & delivery coordination",
+        "summary": "Create a clearer handoff between what a client needs and what a specialist team will deliver.",
+        "directResponsibilities": ["Capture requirements and clarify business priorities.", "Coordinate onboarding, responsibilities, and communication.", "Keep client questions and delivery-team updates connected."],
+        "coordinatedSupport": ["Technical planning, design, development, and other specialist implementation within the agreed scope."],
+        "proposedDeliverables": ["Requirements and scope brief", "Onboarding checklist", "Team handoff and communication plan"]
+      },
+      {
+        "id": "growth-operations",
+        "title": "Growth & administrative support",
+        "summary": "Give the day-to-day work behind growth more structure, from research and coordination to practical administrative follow-through.",
+        "directResponsibilities": ["Organize business research, operational tasks, and priorities.", "Support virtual administration and cross-team follow-ups.", "Coordinate growth-related requests and status updates."],
+        "coordinatedSupport": ["Advertising execution, creative production, commerce implementation, and other specialist tasks as agreed."],
+        "proposedDeliverables": ["Research or operations brief", "Prioritized task tracker", "Coordination schedule and status summary"]
+      }
+    ]
+  },
+  "portfolio": {
+    "eyebrow": "Representative portfolio",
+    "title": "A closer look at the work I can support.",
+    "description": "Six representative service scopes—not completed client case studies. Each outlines a possible engagement, my direct responsibilities, and specialist support that may be coordinated.",
+    "disclaimer": "These are illustrative capabilities and proposed deliverables, not claims of completed projects or client results. Final scope is agreed for each engagement.",
+    "categories": [
+      { "id": "research", "label": "Research" },
+      { "id": "outreach", "label": "Outreach" },
+      { "id": "proposals", "label": "Proposals" },
+      { "id": "accounts", "label": "Accounts" },
+      { "id": "coordination", "label": "Coordination" },
+      { "id": "operations", "label": "Operations" }
+    ],
+    "items": [
+      {
+        "id": "prospect-research",
+        "kind": "representative",
+        "serviceId": "lead-generation",
+        "categories": ["research"],
+        "title": "From a broad market to a relevant shortlist",
+        "summary": "A structured research scope for identifying businesses that fit an agreed customer profile.",
+        "directResponsibilities": ["Define prospect criteria with the business.", "Research relevant organizations and contact context.", "Document why each prospect may fit the offer."],
+        "coordinatedSupport": ["Specialist enrichment or technical data work if the research requires it."],
+        "proposedDeliverables": ["Ideal-customer research brief", "Segmented prospect shortlist", "Qualification notes and outreach priorities"]
+      },
+      {
+        "id": "outreach-follow-up",
+        "kind": "representative",
+        "serviceId": "client-acquisition",
+        "categories": ["outreach", "research"],
+        "title": "An outreach sequence with a reason to connect",
+        "summary": "A considered LinkedIn or email approach that connects audience research, relevant messages, and thoughtful follow-up.",
+        "directResponsibilities": ["Translate the offer into audience-specific messages.", "Prepare initial outreach and follow-up drafts.", "Organize reply handling and conversation handoffs."],
+        "coordinatedSupport": ["Deliverability, sending infrastructure, or specialist automation configuration."],
+        "proposedDeliverables": ["Audience and message brief", "Personalized outreach sequence", "Reply and follow-up tracker"]
+      },
+      {
+        "id": "bids-and-proposals",
+        "kind": "representative",
+        "serviceId": "bids-proposals",
+        "categories": ["proposals"],
+        "title": "A proposal built around the client's brief",
+        "summary": "An opportunity-review and proposal scope for relevant freelance marketplace inquiries.",
+        "directResponsibilities": ["Assess the stated brief and service fit.", "Draft a tailored bid with a clear proposed next step.", "Coordinate questions, revisions, and client follow-up."],
+        "coordinatedSupport": ["Solution feasibility, specialist estimates, and implementation detail supplied by the delivery team."],
+        "proposedDeliverables": ["Opportunity-fit assessment", "Tailored proposal", "Clarification and follow-up log"]
+      },
+      {
+        "id": "crm-and-accounts",
+        "kind": "representative",
+        "serviceId": "account-management",
+        "categories": ["accounts", "operations"],
+        "title": "A clearer view of every client conversation",
+        "summary": "A practical account-organization scope for keeping client context, pipeline stages, and next actions connected.",
+        "directResponsibilities": ["Review the information needed for day-to-day account handling.", "Organize records, notes, pipeline stages, and follow-up tasks.", "Prepare a consistent client communication rhythm."],
+        "coordinatedSupport": ["CRM integrations, migrations, or advanced automation that require technical specialists."],
+        "proposedDeliverables": ["Account-record structure", "Pipeline and follow-up tracker", "Communication and handover notes"]
+      },
+      {
+        "id": "scoping-onboarding-coordination",
+        "kind": "representative",
+        "serviceId": "project-coordination",
+        "categories": ["coordination", "accounts"],
+        "title": "A thoughtful handoff from conversation to delivery",
+        "summary": "A scoping and onboarding approach that helps clients and specialist teams work from the same understanding.",
+        "directResponsibilities": ["Capture business requirements, questions, and priorities.", "Coordinate onboarding, ownership, and communication expectations.", "Connect client feedback with delivery-team updates."],
+        "coordinatedSupport": ["Specialist technical planning and implementation; the delivery team owns its technical decisions and execution."],
+        "proposedDeliverables": ["Requirements and scope outline", "Onboarding checklist", "Responsibility map and update cadence"]
+      },
+      {
+        "id": "growth-and-administration",
+        "kind": "representative",
+        "serviceId": "growth-operations",
+        "categories": ["operations", "coordination"],
+        "title": "More structure behind the next stage of growth",
+        "summary": "A flexible research, virtual administration, and coordination scope for the operational work around business development.",
+        "directResponsibilities": ["Clarify operational priorities and organize task ownership.", "Support research, administrative follow-through, and status tracking.", "Coordinate requests across business and specialist teams."],
+        "coordinatedSupport": ["Creative, advertising, commerce, or technical implementation by the relevant specialists."],
+        "proposedDeliverables": ["Research and priority brief", "Operational task tracker", "Coordination plan and status summary"]
+      }
+    ]
+  },
+  "tools": {
+    "eyebrow": "Tools & platforms",
+    "title": "Familiar platforms. Purposeful workflows.",
+    "description": "Tools I am familiar with across client relationships, prospecting, outreach, freelance marketplaces, commerce, and advertising.",
+    "disclaimer": "Listed platforms indicate familiarity only—not certification, endorsement, or a claim of specialist technical proficiency.",
+    "categories": [
+      { "id": "crm", "label": "CRM" },
+      { "id": "prospecting-outreach", "label": "Prospecting & outreach" },
+      { "id": "email", "label": "Email" },
+      { "id": "freelance", "label": "Freelance" },
+      { "id": "commerce", "label": "Commerce" },
+      { "id": "advertising", "label": "Advertising" }
+    ],
+    "items": [
+      { "id": "gohighlevel", "name": "GoHighLevel", "categories": ["crm"] },
+      { "id": "hubspot", "name": "HubSpot", "categories": ["crm"] },
+      { "id": "zoho-crm", "name": "Zoho CRM", "categories": ["crm"] },
+      { "id": "linkedin-sales-navigator", "name": "LinkedIn Sales Navigator", "categories": ["prospecting-outreach"] },
+      { "id": "skylead", "name": "Skylead", "categories": ["prospecting-outreach"] },
+      { "id": "podpitch", "name": "PodPitch", "categories": ["prospecting-outreach"] },
+      { "id": "brevo", "name": "Brevo", "categories": ["email"] },
+      { "id": "instantly-ai", "name": "Instantly.ai", "categories": ["email"] },
+      { "id": "upwork", "name": "Upwork", "categories": ["freelance"] },
+      { "id": "freelancer", "name": "Freelancer.com", "categories": ["freelance"] },
+      { "id": "fiverr", "name": "Fiverr", "categories": ["freelance"] },
+      { "id": "meta-ads", "name": "Meta Ads", "categories": ["advertising"] },
+      { "id": "amazon", "name": "Amazon", "categories": ["commerce"] },
+      { "id": "ebay", "name": "eBay", "categories": ["commerce"] },
+      { "id": "etsy", "name": "Etsy", "categories": ["commerce"] },
+      { "id": "walmart", "name": "Walmart", "categories": ["commerce"] }
+    ]
+  },
+  "experience": {
+    "eyebrow": "Professional experience",
+    "title": "Experience across conversations, clients, and coordination.",
+    "description": "Business-development, freelance account-management, and sales roles. Dates are shown as supplied; overlapping periods are retained.",
+    "presentLabel": "Present",
+    "items": [
+      {
+        "id": "fixit-consul-tech",
+        "organization": "FixIT Consul-Tech, LLC",
+        "role": "Bidding & Client Communication",
+        "startDate": "2026-06",
+        "endDate": null,
+        "period": "June 2026–Present"
+      },
+      {
+        "id": "freelance-business-development",
+        "organization": "Freelancer.com & Upwork",
+        "role": "Freelance Business Development & Account Management",
+        "startDate": "2023-12",
+        "endDate": "2025-12",
+        "period": "December 2023–December 2025"
+      },
+      {
+        "id": "cyber-soft-vantage",
+        "organization": "Cyber Soft Vantage (CSV)",
+        "role": "Sales Executive",
+        "startDate": "2025-02",
+        "endDate": "2025-05",
+        "period": "February 2025–May 2025"
+      }
+    ]
+  },
+  "education": {
+    "eyebrow": "Education & academic milestones",
+    "title": "A foundation in information technology.",
+    "description": "Academic qualifications and results, presented separately from professional performance claims.",
+    "items": [
+      {
+        "id": "bit",
+        "qualification": "Bachelor of Information Technology (BIT)",
+        "institution": "The Islamia University of Bahawalpur",
+        "startYear": 2019,
+        "endYear": 2023,
+        "period": "2019–2023",
+        "milestoneId": "bit-cgpa"
+      },
+      {
+        "id": "intermediate-computer-science",
+        "qualification": "Intermediate in Computer Science",
+        "institution": "Rashid Girls College Alipur",
+        "startYear": 2017,
+        "endYear": 2019,
+        "period": "2017–2019",
+        "milestoneId": "intermediate-marks"
+      }
+    ],
+    "academicMilestones": [
+      {
+        "id": "bit-cgpa",
+        "educationId": "bit",
+        "label": "BIT CGPA",
+        "value": 3.73,
+        "maximum": 4,
+        "decimalPlaces": 2,
+        "displayValue": "3.73 / 4.00"
+      },
+      {
+        "id": "intermediate-marks",
+        "educationId": "intermediate-computer-science",
+        "label": "Intermediate marks",
+        "value": 934,
+        "maximum": 1100,
+        "decimalPlaces": 0,
+        "displayValue": "934 / 1100"
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Let's start a conversation",
+    "title": "What opportunity are you working toward?",
+    "description": "Share a little about your business, the support you need, and what a useful next step would look like.",
+    "emailLabel": "Email Aneesa",
+    "copyEmailLabel": "Copy email address",
+    "emailCopied": "Email address copied.",
+    "emailCopyFallback": "Copy isn't available here. Select and copy the email address below.",
+    "locationLabel": "Based in",
+    "collaborationLabel": "Working together",
+    "workingHoursLabel": "Working context",
+    "composer": {
+      "title": "Make the introduction",
+      "description": "Draft a subject and message, then continue in your email app.",
+      "subjectLabel": "Subject",
+      "subjectPlaceholder": "Business development support for…",
+      "messageLabel": "Your message",
+      "messagePlaceholder": "Tell me about your business and the support you're looking for.",
+      "submitLabel": "Open email app",
+      "privacyNote": "This form opens your email app. Nothing is sent or stored by this website.",
+      "subjectRequired": "Please add a subject.",
+      "messageRequired": "Please add a short message.",
+      "subjectTooLong": "Please keep the subject within 160 characters.",
+      "messageTooLong": "Please keep the message within 2,000 characters.",
+      "openedMessage": "Your email app has been requested. Review and send the message there; this website has not sent it.",
+      "fallbackMessage": "If your email app did not open, copy the email address and message into your preferred email service."
+    }
+  },
+  "footer": {
+    "signature": "Considered conversations. Meaningful connections.",
+    "copyright": "Aneesa Tariq. All rights reserved.",
+    "privacyNote": "No analytics or tracking. Contact takes place through your email app.",
+    "backToTopLabel": "Back to the beginning"
+  },
+  "verifiedMetrics": []
+}

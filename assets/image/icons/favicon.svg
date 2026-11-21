@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="monogram-title">
+  <title id="monogram-title">Aneesa Tariq — AT monogram</title>
+  <rect x="0" y="0" width="512" height="512" rx="104" fill="#0B1F38" />
+  <rect x="18" y="18" width="476" height="476" rx="88" fill="none" stroke="#244562" stroke-width="2" />
+  <polygon points="110,368 199,144 226,144 318,368 280,368 254,302 167,302 142,368" fill="#D9B969" />
+  <polygon points="178,272 243,272 210,186" fill="#0B1F38" />
+  <polygon points="236,144 401,144 401,182 385,182 380,167 335,167 335,350 360,350 360,368 285,368 285,350 310,350 310,167 260,167 255,182 236,182" fill="#FFFFFF" />
+</svg>

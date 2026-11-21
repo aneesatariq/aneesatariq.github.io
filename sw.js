@@ -1,11 +1,11 @@
 'use strict';
 const RELEASE = {
-  "version": "1.0.49",
-  "token": "23c786c8b9f1a06d0dd78d992b93bbea60354eea25b8fb307d9c6d72f14f9157",
+  "version": "1.0.50",
+  "token": "3ff9bca3420a3277544a4ae7c5cc8cafb094309282b9282737a7d67dac5ba0c7",
   "namespace": "aneesa-tariq-portfolio",
   "enabled": true,
   "offlineEnabled": true,
-  "precacheBytes": 1884505,
+  "precacheBytes": 1888906,
   "budgetBytes": 2000000,
   "resources": [
     {
@@ -15,8 +15,8 @@ const RELEASE = {
     },
     {
       "path": "assets/css/site.css",
-      "integrity": "sha256-gsqsyLaOgy20hUP8AT+DleYduSrhpOeW+AgAB2RYOBI=",
-      "bytes": 65353
+      "integrity": "sha256-pWhdzQXSo5h9CxuPUsjUDupTNLZOy+1IAaN0/UkZa3Y=",
+      "bytes": 68159
     },
     {
       "path": "assets/fonts/manrope-latin-variable.woff2",
@@ -110,8 +110,8 @@ const RELEASE = {
     },
     {
       "path": "assets/js/app.js",
-      "integrity": "sha256-Sc1ZBzJtW+cnERqNyQuWexr9QGmpysODqf15hXjzzzU=",
-      "bytes": 2417
+      "integrity": "sha256-djgSxed9AIIxnWqGU6rsw4hKkbT17yHBSAVsxUuYR5U=",
+      "bytes": 3582
     },
     {
       "path": "assets/js/data.js",
@@ -140,13 +140,13 @@ const RELEASE = {
     },
     {
       "path": "assets/json/version.json",
-      "integrity": "sha256-7lbEdxNdkGaqCBmRjSXMD+YMTob8GA1xYEtLDtPS61E=",
+      "integrity": "sha256-pfPixR03j1i/dYPYl/Om2p17HIuo8Z9jf4J19yT37zQ=",
       "bytes": 85
     },
     {
       "path": "index.html",
-      "integrity": "sha256-mfs0zEd3qOnBW7FUAd1HWF2xTAuGbOdd9WiKfQv68B4=",
-      "bytes": 148889
+      "integrity": "sha256-mXApoHAHF54sEPLGb7MLB2D0gZFZoPbCyYvl0Ioo5xs=",
+      "bytes": 149319
     },
     {
       "path": "manifest.json",

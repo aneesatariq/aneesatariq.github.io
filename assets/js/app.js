@@ -14,6 +14,7 @@ let initialized = false;
 async function initialize() {
   if (initialized) return;
   initialized = true;
+  initializeSectionDock();
   const [dataResult, uiResult] = await Promise.allSettled([
     importVersioned('./data.js'),
     importVersioned('./ui.js')
@@ -50,6 +51,35 @@ async function initialize() {
   }
   window.removeEventListener('beforeinstallprompt', captureInstallPrompt);
   earlyInstallPrompt = null;
+}
+
+function initializeSectionDock() {
+  const dock = document.querySelector('.section-dock');
+  if (!dock) return;
+  const links = [...dock.querySelectorAll('a')];
+  const sections = links.map((link) => document.getElementById(link.hash.slice(1)));
+  if (sections.some((section) => !section)) return;
+  dock.hidden = false;
+  let frame = 0;
+  let current = -1;
+  const update = () => {
+    frame = 0;
+    const marker = window.innerHeight * 0.4;
+    const active = sections.findLastIndex((section) => section.getBoundingClientRect().top <= marker);
+    if (active !== current) {
+      links[current]?.removeAttribute('aria-current');
+      links[active]?.setAttribute('aria-current', 'location');
+      current = active;
+    }
+    const distance = document.documentElement.scrollHeight - window.innerHeight;
+    dock.style.setProperty('--read-progress', Math.max(0, Math.min(1, window.scrollY / Math.max(1, distance))));
+  };
+  const schedule = () => {
+    if (!frame) frame = requestAnimationFrame(update);
+  };
+  window.addEventListener('scroll', schedule, { passive: true });
+  window.addEventListener('resize', schedule);
+  update();
 }
 
 if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initialize, { once: true });

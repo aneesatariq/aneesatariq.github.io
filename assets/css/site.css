@@ -3049,3 +3049,105 @@ body.dialog-open {
         animation: none !important;
     }
 }
+
+/* Portfolio layout and section navigation */
+@media screen {
+    .hero.dark-section {
+        background-color: #101e33;
+        background-image: radial-gradient(ellipse at 78% 35%, #254c57, transparent 55%),
+            linear-gradient(122deg, #101a2b 30%, #172c43);
+    }
+    .hero-grid {
+        gap: clamp(32px, 6vw, 92px);
+        padding-block: clamp(56px, 8vw, 118px);
+    }
+    .hero h1 {
+        white-space: normal;
+        font-size: clamp(56px, 9vw, 135px);
+        line-height: .95;
+    }
+    .hero-statement {
+        font-size: clamp(30px, 3vw, 46px);
+    }
+    .hero .portrait-frame picture {
+        border-radius: 48% 48% 20px 20px / 37% 37% 20px 20px;
+        box-shadow: 0 28px 80px #040c1a66;
+    }
+    .hero .portrait-frame::before {
+        inset: -12px -12px 12px 12px;
+        border-radius: 48% 48% 20px 20px / 37% 37% 20px 20px;
+    }
+    .hero .portrait-tag {
+        border-radius: 12px;
+    }
+    .portfolio-section {
+        background: #e8eef0;
+    }
+    .portfolio-section .scope-visual {
+        background: radial-gradient(ellipse at 85% 5%, #c2e1df, transparent 68%), #dce6ec;
+    }
+    .contact-section.dark-section {
+        background-image: radial-gradient(ellipse at 88% 22%, #245869, transparent 58%),
+            linear-gradient(145deg, #101e33, #182e46);
+    }
+    .tools-section {
+        overflow: clip;
+    }
+    body:has(.section-dock:not([hidden])) {
+        padding-bottom: calc(76px + env(safe-area-inset-bottom));
+    }
+    .section-dock {
+        position: fixed;
+        z-index: 12;
+        inset: auto auto max(12px, env(safe-area-inset-bottom)) 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        padding: 5px;
+        border: 1px solid #ffffff45;
+        border-radius: 16px;
+        background: #14263a;
+        color: #fff;
+        box-shadow: 0 10px 36px #07152648;
+    }
+    .section-dock-progress {
+        position: absolute;
+        inset: auto 12px 2px;
+        height: 2px;
+        background: #78dacd;
+        transform: scaleX(var(--read-progress, 0));
+        transform-origin: left;
+        pointer-events: none;
+    }
+    .section-dock a {
+        display: grid;
+        place-items: center;
+        min-height: 44px;
+        padding-inline: clamp(7px, 2vw, 16px);
+        border-radius: 10px;
+        text-decoration: none;
+        font-size: .75rem;
+        font-weight: 700;
+    }
+    .section-dock a:is(:hover, :focus-visible) {
+        background: #314b60;
+        outline-color: #78dacd;
+        outline-offset: -3px;
+    }
+    .section-dock a[aria-current] {
+        background: #b7eee5;
+        color: #102438;
+    }
+}
+@media screen and (max-width: 599px) {
+    .hero-grid {
+        padding-block: 44px;
+    }
+    .hero h1 {
+        font-size: clamp(48px, 12vw, 72px);
+    }
+    .hero-portrait {
+        margin-inline: 12px;
+    }
+}

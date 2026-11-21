@@ -1,4 +1,4 @@
-// Progressive enhancement only: no account, analytics, draft storage, or dependencies.
+// Progressive enhancement: install + update only. No release pinning or SRI offline cache.
 let initialized = false;
 
 export async function initPWA(context, ui) {
@@ -9,13 +9,11 @@ export async function initPWA(context, ui) {
   const copy = content.ui.pwa;
   const installButton = ui.elements.installButton;
   const displayMode = matchMedia('(display-mode: standalone)');
-  const token = document.querySelector('meta[name="portfolio-release-token"]')?.content;
   const capable = window.isSecureContext && 'serviceWorker' in navigator;
   let registration;
   let deferredPrompt;
   const usedPrompts = new WeakSet();
   let installed = displayMode.matches || navigator.standalone === true;
-  let offlineDismissed = false;
   let updateDeferredUntil = 0;
   let notice = '';
   let acceptedUpdate = false;
@@ -29,13 +27,6 @@ export async function initPWA(context, ui) {
   const draft = () => Array.from(document.querySelectorAll('#contact-composer input, #contact-composer textarea')).map((field) => field.value).join('\n');
   const editing = () => document.activeElement?.matches('input, textarea, [contenteditable="true"]');
   const hideNotice = (kind) => { ui.banners.hide(kind); notice = ''; };
-
-  function pinRelease() {
-    const worker = navigator.serviceWorker?.controller;
-    if (worker && /^[a-f0-9]{64}$/.test(token || '')) {
-      worker.postMessage({ type: 'PIN_RELEASE', token });
-    }
-  }
 
   function reloadOnce() {
     if (reloaded) return;
@@ -58,21 +49,10 @@ export async function initPWA(context, ui) {
         onAction: acceptUpdate,
         onDismiss() { notice = ''; updateDeferredUntil = Date.now() + 60_000; renderNotice(); }
       })) notice = 'update';
-      return;
-    }
-    if (!navigator.onLine && options.offline.enabled && !offlineDismissed && notice !== 'status') {
-      if (ui.banners.show('status', {
-        title: copy.offlineTitle,
-        description: copy.offlineMessage,
-        dismissLabel: copy.statusDismiss,
-        onDismiss() { notice = ''; offlineDismissed = true; }
-      })) notice = 'status';
     }
   }
 
   function acceptUpdate() {
-    // The labeled action is consent to reload this tab, including any unsent draft.
-    // No other tab automatically reloads when this worker activates.
     if (!registration?.waiting) {
       if (controllerChanged) reloadOnce();
       return;
@@ -104,13 +84,13 @@ export async function initPWA(context, ui) {
     installButton.setAttribute('aria-haspopup', deferredPrompt ? 'false' : 'dialog');
   }
 
-  // A real existing node is moved/restored by the shared dialog controller.
   const helpHost = document.createElement('div');
   helpHost.className = 'container';
   helpHost.hidden = true;
   const helpContent = document.createElement('div');
   helpHost.append(helpContent);
   document.body.append(helpHost);
+
   function installHelp() {
     const paragraphs = [
       !capable ? copy.secureContextHelp : copy.installHelp,
@@ -146,7 +126,6 @@ export async function initPWA(context, ui) {
     syncInstallButton();
     if (installButton) installButton.disabled = true;
     try {
-      // Called directly from a click, never from a timer or automatic banner.
       await prompt.prompt();
       const choice = await prompt.userChoice;
       if (choice.outcome === 'accepted' && !installed) {
@@ -160,7 +139,6 @@ export async function initPWA(context, ui) {
     }
   }
 
-  // Bind before revealing the control. An unsupported native prompt opens honest help.
   installButton?.addEventListener('click', requestInstall);
   function offerInstall(event) {
     if (!capable || !options.install.enabled || installed || usedPrompts.has(event)) return;
@@ -182,10 +160,7 @@ export async function initPWA(context, ui) {
   });
   syncInstallButton();
 
-  window.addEventListener('offline', () => { offlineDismissed = false; renderNotice(); });
   window.addEventListener('online', () => {
-    offlineDismissed = false;
-    if (notice === 'status') hideNotice('status');
     ui.announce(copy.onlineMessage);
     checkRelease();
   });
@@ -199,7 +174,6 @@ export async function initPWA(context, ui) {
   }
 
   navigator.serviceWorker.addEventListener('controllerchange', () => {
-    // Initial claim is not an update and must not reload the page.
     controllerChanged = Boolean(hadController) || acceptedUpdate;
     hadController = true;
     clearTimeout(activationTimer);
@@ -209,13 +183,10 @@ export async function initPWA(context, ui) {
       return;
     }
     acceptedUpdate = false;
-    // An unchanged old document stays pinned, even after another tab accepts an update.
-    pinRelease();
     notice = '';
     renderNotice();
   });
   let hadController = Boolean(navigator.serviceWorker.controller);
-  pinRelease();
 
   function watchWorker(worker) {
     if (!worker) return;
@@ -223,9 +194,6 @@ export async function initPWA(context, ui) {
       if (worker.state === 'installed' && registration?.waiting) {
         updateDeferredUntil = 0;
         renderNotice();
-      }
-      if (worker.state === 'redundant') {
-        document.documentElement.dataset.pwaStatus = 'release-unavailable';
       }
     });
   }
@@ -237,7 +205,6 @@ export async function initPWA(context, ui) {
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 8000);
     try {
-      // A separate network-only URL never replaces release JSON used by the UI.
       const freshURL = new URL('assets/json/version.json', baseURL);
       freshURL.searchParams.set('release-check', '1');
       const response = await fetch(freshURL, {
@@ -250,11 +217,11 @@ export async function initPWA(context, ui) {
         }
       }
     } catch {
-      // Connectivity checks are advisory. They never claim that an update is installed.
+      // Advisory only.
     } finally {
       clearTimeout(timeout);
       controller.abort();
-      try { await registration.update(); } catch { /* The current release remains usable. */ }
+      try { await registration.update(); } catch { /* keep current worker */ }
       checking = false;
       renderNotice();
     }
@@ -277,7 +244,6 @@ export async function initPWA(context, ui) {
     renderNotice();
     checkRelease();
   } catch {
-    // HTTPS/policy/private-storage failures must not break static content or email.
     document.documentElement.dataset.pwaStatus = 'unavailable';
   }
   return { offerInstall };

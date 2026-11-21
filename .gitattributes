@@ -5,3 +5,7 @@
 *.webp binary
 *.woff2 binary
 *.ttf binary
+
+# Precached HTML must hash identically locally and on GitHub Pages.
+*.html text eol=lf
+

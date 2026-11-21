@@ -88,9 +88,9 @@
       "reloadAfterActivation": true
     },
     "offline": {
-      "enabled": true,
+      "enabled": false,
       "cacheOriginalImages": false,
-      "maxPrecacheBytes": 2000000
+      "maxPrecacheBytes": 0
     },
     "telemetry": false
   },
